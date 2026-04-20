@@ -28,8 +28,8 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 ### Screenshot
  
-![Desktop Design](assets\images\desktop-view.png)
-![Mobile Design](assets\images\mobile-view.png)
+![Desktop Design](./assets/images/desktop-view.png)
+![Mobile Design](./assets/images/mobile-view.png)
  
 ---
  

@@ -6,6 +6,7 @@ This is my solution to the [Contact form challenge on Frontend Mentor](https://w
  
 - [Overview](#overview)
   - [The Challenge](#the-challenge)
+  - [Live View](#live-view)
   - [Screenshot](#screenshot)
 - [My Process](#my-process)
   - [Built With](#built-with)
@@ -26,6 +27,11 @@ Users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+### Live View
+
+See the live page here- [Click me](https://ayushi-171.github.io/Contact-form2.0/)
+
 ### Screenshot
  
 ![Desktop Design](./assets/images/desktop-view.png)

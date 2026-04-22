@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <div class="toast" id="toast">
+  <div role="status" aria-live="polite" class="toast" id="toast">
       <div class="toast-title">
         <img src="assets/images/icon-success-check.svg" alt="success"> 
         <strong>Message Sent!</strong>
@@ -21,7 +21,7 @@
       <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
   <div>
-    
+    <main>
     <form id="contactForm" novalidate>
     <h1>Contact Us</h1>
 
@@ -30,7 +30,7 @@
         <label for="first">First Name
           <span>*</span>
         </label>
-        <input type="text" id="first" required >
+        <input type="text" id="first" required aria-describedby="first-error" >
         <span class="error" id="first-error">
           This field is required
         </span>
@@ -40,7 +40,7 @@
         <label for="last">Last Name
           <span>*</span>
         </label>
-        <input type="text" id="last" required >
+        <input type="text" id="last" required aria-describedby="last-error">
         <span class="error" id="last-error">
           This field is required
         </span>
@@ -52,7 +52,7 @@
       <label for="email">Email Address
        <span>*</span>
       </label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" required aria-describedby="email-error">
       <span class="error" id="email-error">
         Please enter a valid email address
       </span>
@@ -62,17 +62,19 @@
       <label class="group-label">Query Type
         <span>*</span></label> 
       
-        <div class="radio-class">
-         <label class="radio" for="general">
-          <input type="radio" name="QueryType" id="general" value="General Enquiry">
+        <fieldset>
+         <div class="radio-class">
+         <legend class="radio" for="general">
+          <input type="radio" name="QueryType" id="general" value="General Enquiry" aria-describedby="query-error">
           General Enquiry
-         </label>
+         </legend>
 
-         <label class="radio" for="support">
-          <input type="radio" name="QueryType" id="support" value="Support Request">
+         <legend class="radio" for="support">
+          <input type="radio" name="QueryType" id="support" value="Support Request" aria-describedby="query-error">
           Support Request
-         </label>
-        </div>
+         </legend>
+         </div>
+        </fieldset>
       <span class="error" id="query-error">Please select a query type</span>
     </div>
 
@@ -80,13 +82,13 @@
       <label for="msg">Message
         <span>*</span>
       </label>
-      <textarea id="msg" rows="5" required></textarea>
+      <textarea id="msg" rows="5" required aria-describedby="msg-error"></textarea>
       <span class="error" id="msg-error">This field is required</span>
     </div>
 
     <div class="checkbox">
       <label class="checkbox-label" for="consent">
-        <input type="checkbox" id="consent" required>
+        <input type="checkbox" id="consent" required aria-describedby="consent-error">
       <span>I consent to being contacted by the team<span class="content">*</span></span>
       </label>
       <span class="error" id="consent-error">
@@ -101,6 +103,7 @@
     
 
     </form>
+    </main>
   </div>
   
   <div class="attribution">

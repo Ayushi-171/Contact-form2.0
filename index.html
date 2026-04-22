@@ -59,23 +59,23 @@
     </div>
 
     <div class="query" >
-      <label class="group-label">Query Type
-        <span>*</span></label> 
+      <fieldset>
+      <legend class="group-label">Query Type
+        <span>*</span></legend> 
       
-        <fieldset>
          <div class="radio-class">
-         <legend class="radio" for="general">
+         <label class="radio" for="general">
           <input type="radio" name="QueryType" id="general" value="General Enquiry" aria-describedby="query-error">
           General Enquiry
-         </legend>
+         </label>
 
          <label class="radio" for="support">
           <input type="radio" name="QueryType" id="support" value="Support Request" aria-describedby="query-error">
           Support Request
          </label>
-         </div>
-        </fieldset>
+         </div>        
       <span class="error" id="query-error">Please select a query type</span>
+      </fieldset>
     </div>
 
     <div class="message">
